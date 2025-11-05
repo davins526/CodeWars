@@ -1,16 +1,16 @@
-﻿class AverageSolution
+﻿using System.Text;
+
+public static class Kata
 {
-    public static double FindAverage(double[] array)
+    public static string CountSheep(int n)
     {
-        double sum = 0;
-        int count = 0;
+        if (n <= 0) return "";
 
-        for (int i = 0; i < array.Length; i++)
-        {
-            sum += array[i];
-            count++;
-        }
-        return sum / count;
+        StringBuilder sb = new StringBuilder();
 
+          for (System.Int32 i = 1; i <= n;  i++){
+                sb.Append($"{i} sheep...");
+            }
+            return sb.ToString();
     }
 }
