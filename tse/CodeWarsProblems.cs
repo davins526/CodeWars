@@ -1,16 +1,9 @@
-﻿using System.Text;
-
+﻿using System.Linq;
 public static class Kata
 {
-    public static string CountSheep(int n)
+    public static string Solution(string str)
     {
-        if (n <= 0) return "";
-
-        StringBuilder sb = new StringBuilder();
-
-          for (System.Int32 i = 1; i <= n;  i++){
-                sb.Append($"{i} sheep...");
-            }
-            return sb.ToString();
+        var orggrev = new string(str.Reverse().ToArray());
+        return orggrev;
     }
 }
