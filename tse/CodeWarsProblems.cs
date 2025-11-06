@@ -1,9 +1,11 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
 public static class Kata
 {
-    public static string Solution(string str)
+    public static int CountSheeps(bool[] sheeps)
     {
-        var orggrev = new string(str.Reverse().ToArray());
-        return orggrev;
+            return sheeps.Count(s => s);
     }
 }
